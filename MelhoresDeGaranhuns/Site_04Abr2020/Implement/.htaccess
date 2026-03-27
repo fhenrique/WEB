@@ -1,0 +1,25 @@
+RewriteEngine On
+
+ErrorDocument 404 https://bdk.ysrael-dev.com/not-found
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^home$ index.php [L]
+RewriteRule ^login$ login.php [L]
+RewriteRule ^cadastro$ cadastro.php [L]
+RewriteRule ^logout$ sair.php [L]
+RewriteRule ^recuperar-senha$ recuperar-senha.html [L]
+RewriteRule ^perfil$ painel.php [L]
+RewriteRule ^avaliacoes$ avaliacoes.php [L]
+RewriteRule ^administracao$ admin.php [L]
+RewriteRule ^adicao$ adicao.php [L]
+RewriteRule ^edicao$ edicao.php [L]
+RewriteRule ^empresas$ todas_empresas.php [L]
+RewriteRule ^carrossel$ carrossel.php [L]
+
+RewriteRule ^perfil/(.*)$ perfil.php?user=$1 [NC]
+RewriteRule ^post/(.*)/(.*)$ postagem.php?p=$1 [NC]
+RewriteRule ^rank/(.*)$ rank.php?rank=$1 [NC]
+RewriteRule ^quiz/(.*)$ rank_quiz.php?temp=$1 [NC]
+RewriteRule ^editar-quiz/(.*)$ editar-quiz.php?quiz=$1 [NC]

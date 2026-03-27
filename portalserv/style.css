@@ -1,0 +1,121 @@
+:root {
+	--color-primary: #0073ff;
+	--color-white: #e9e9e9;
+	--color-black: #141d28;
+	--color-black-1: #212b38;
+	--color-cinza: #66696b;
+	--color-azul2: #01436e;
+  }
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  body {
+	font-family: sans-serif;
+   
+  }
+  .logo {
+	color: var(--color-white);
+	font-size: 25px;
+  }
+  .logo span {
+	color: var(--color-cinza);
+  }
+    
+  .menu-bar {
+	background-color: var(--color-black);
+	height: 40px;
+	width: 100%;
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+	padding: 0 1%;
+	position: relative;
+  }
+  .menu-bar ul {
+	list-style: none;
+	display: flex;
+  }
+  .menu-bar ul li {
+	/* width: 120px; */
+	padding: 10px 30px;
+	/* text-align: center; */
+	position: relative;
+  }
+  .menu-bar ul li a {
+	font-size: 15px; /*tamanho da fonte do menu principal*/
+	color: var(--color-white);
+	text-decoration: none;
+	transition: all 0.3s;
+  }
+  
+  /*hover dos itens nos menus*/ 
+  .menu-bar ul li a:hover { /*quando passa o mouse por cima dos itens do menu e submenu*/
+	font-size: 16px; 
+	font-weight: bold ;
+  }
+
+  .fas {
+	float: right;
+	margin-left: 10px;
+	padding-top: 3px;
+  }
+  
+  
+ 
+  /* dropdown menu style */
+  .dropdown-menu {
+	display: none;
+	text-align: left;
+	border-color: var(--color-cinza);
+  }
+
+
+
+  .menu-bar ul li:hover .dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: var(--color-black);
+  }
+  .menu-bar ul li:hover .dropdown-menu ul {
+	display: block;
+	margin: 10px; 
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li { /*aqui controla a largura do primeiro menu*/
+	width: 200px; /*era 200*/
+	padding: 5px; /*era 10*/
+  }
+  
+ /*Menu do outros cadastros*/ 
+  .dropdown-menu-1 {
+	display: none;
+	padding: 10px 30px;  
+	border-style: solid;
+	border-color: var(--color-cinza)
+  }
+
+  .dropdown-menu ul li:hover .dropdown-menu-1 { /*é este que controla o layt do submenu de outros cadastros*/
+	display: block;
+	position: absolute;
+	padding: 10px 20px;  
+	left: 155px; /*posição esquerda onde vai começar  o submenu*/
+	width: 250px; /*largura do submenu de outros cadastros*/
+	top: 0;
+	background-color: var(--color-black);
+  }
+  
+  .xsol {
+	height: calc(100vh - 40px);
+	background-image: url(./empresa_xsol.jpg);
+	background-position: center;
+  }
+
+  .outra {
+	height: calc(100vh - 40px);
+	background-image: url(./outraempresa.jpg);
+	background-position: center;
+  }

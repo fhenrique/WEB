@@ -1,0 +1,18 @@
+   Projeto: Sistema web para livraria
+   requisitos: 	Cadastrar novos livros
+				Alterar dados de livros já cadastrados
+				Listar dosos os livros do acervo
+				Pesquisar livros do acervo a partir do titulo
+   
+   tecnlogias: CSS, Javascript, PHP, MySQL
+   Hospedagem: 000Webhost   
+   
+Tabelas:
+	acervo
+		id
+		id_editora
+		titulo
+	editora
+		id
+		descricao
+		

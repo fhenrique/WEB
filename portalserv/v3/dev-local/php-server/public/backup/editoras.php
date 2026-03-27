@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang = "en">
+<html>
+    <head>
+        <meta charset="utf-8" http-equiv='refresh' content='5'>
+        <title>
+            Tudo Eu Consulta.php!
+        </title>    
+        
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $("#myTable").on('click','.btnSelect',function(){
+                 var currentRow=$(this).closest("tr"); 
+                 
+                 var col1=currentRow.find("td:eq(0)").html();
+                 var varjs=col1
+                 
+                 alert(varjs);
+            });
+        });
+    </script>
+    
+        <style>
+            table {
+                margin: 0 auto;
+                font-size: large;
+                border: 0px solid black;
+                height: 100%;
+            }
+  
+            h1 {
+                text-align: center;
+                color: #164585;
+                font-size: xx-large;
+                font-family: "Gill Sans",
+                  "Gill Sans MT", 
+                  " Calibri", 
+                  "Trebuchet MS",
+                  "sans-serif";
+            }
+  
+            th {
+                background-color: #b6c0f3;
+                border: 0px solid black;
+            }
+  
+            td {
+                font-weight: bold;
+                border: 0px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+  
+        </style>
+        
+        <!-- BOOTSTRAP CSS AND PLUGINS-->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+              integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+              crossorigin="anonymous" 
+        />
+
+    </head>
+    
+    
+    <body>
+
+    </body>
+    
+<?php
+
+    echo "<table border=1 id='myTableHead' class='table2'>";
+    echo "<td style='font size=25'>TudoEu - PEDIDOS DE PRESTADORES DE SERVIÇO</td>";    
+    echo "</table>";
+    
+    echo "<table border=0 id='myTable' class='table'>";
+    echo "<tr class='danger'>";
+    echo "<th scope='row'>ID</th>";
+    echo "<th>ID</th>";
+    echo "<th>DESCRICAO</th>";
+    echo "</tr>";
+    
+    $host = "108.167.132.240";
+    $usuario = "melho972_fabio";
+    $senha = "senha@3762";
+    $basededados = "melho972_tudoeu";   
+
+                $host = "108.167.132.244";
+                $database = "melho972_ranking";
+                $usuario = "melho972_admin";
+                $senha = "learsy10";    
+    
+    $strcon = mysqli_connect($host,$usuario,$senha,$basededados);
+    $sql = "SELECT id, srv_tipo, srv_data, srv_hora, srv_endereco, srv_obs, cli_nome, cli_telefone, cli_obs FROM dados Where status = '1'";
+    $resultado = mysqli_query($strcon,$sql);
+    $rowcount = mysqli_num_rows($resultado);
+    
+    //echo "Qtd. de serviços pendentes: ".$rowcount;
+    
+    if($rowcount > 0)
+    {
+        echo "<embed src='alert.mp3'width='1' height='1'>";
+    }   
+    
+    while($registro = mysqli_fetch_array($resultado))
+    {
+        $serv_id = $registro['id'];
+        $serv_tipo = $registro['srv_tipo'];
+        
+        $serv_data = $registro['srv_data'];
+        $serv_data_dt = new DateTime();
+        $serv_data_show = $serv_data_dt->format('d-m-Y');
+        
+        
+        $serv_hora = $registro['srv_hora'];
+        $serv_endereco = $registro['srv_endereco'];
+        $serv_obs = $registro['srv_obs'];
+        $cl_nome = $registro['cli_nome'];
+        $cl_telefone = $registro['cli_telefone'];
+        $cl_obs = $registro['cli_obs'];
+        
+        
+        echo "<tr>";
+        echo "<td>".$serv_id."</td>";
+        echo "<td>".$serv_tipo."</td>";
+        echo "<td>".$serv_data_show."</td>";
+        echo "<td>".$serv_hora."</td>";
+        echo "<td>".$serv_endereco."</td>";
+        echo "<td>".$serv_obs."</td>";
+        echo "<td>".$cl_nome."</td>";
+        echo "<td>".$cl_telefone."</td>";
+        echo "<td>".$cl_obs."</td>";
+        echo "<td align= 'center'>"."<form action='atende.php' method='POST'>"."<input type='submit' class='btnSelect' name='submit' id='atender' style='height: 20px; width: 40px; text-align:center; '  value='' >"."</td>";
+        echo "</tr>";
+    }
+
+    mysqli_close;
+    
+    echo "</table>";
+    
+    /////
+    $sql = "SELECT id FROM dados Where notificado = 'N'";
+    $resultado = mysqli_query($strcon,$sql);
+    $rowcount = mysqli_num_rows($resultado);
+    
+    if($rowcount > 0)
+    {
+        function send_whatsapp($destino="5511987539544"){
+            $curl = curl_init();
+
+            curl_setopt_array($curl, array(
+              CURLOPT_URL => 'https://app.whatsgw.com.br/api/WhatsGw/Send',
+              CURLOPT_RETURNTRANSFER => true,
+              CURLOPT_ENCODING => '',
+              CURLOPT_MAXREDIRS => 10,
+              CURLOPT_TIMEOUT => 0,
+              CURLOPT_FOLLOWLOCATION => true,
+              CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+              CURLOPT_CUSTOMREQUEST => 'POST',
+              CURLOPT_POSTFIELDS =>'{
+            "apikey" : "b873afb6-6726-4d3e-a474-d07fb7cdaba3",
+            "phone_number" : "5511987539544",
+            "contact_phone_number" : "55'.$destino.'",
+            "message_custom_id" : "1",
+            "message_type" : "text",
+            "message_body" : "👋Olá, somos a Tudo Eu! Recebemos sua solicitação e estamos preparando seu orçamento.",
+            "check_status" : "0"
+            }',
+              CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/x-www-form-urlencoded'
+              ),
+            ));
+
+            $response = curl_exec($curl);
+
+            curl_close($curl);
+        }
+
+        send_whatsapp($cl_telefone);            
+
+        mysqli_query($strcon,"UPDATE dados set notificado = 'S' where id = ". $serv_id);
+    }
+    
+?>  
+
+</html> 

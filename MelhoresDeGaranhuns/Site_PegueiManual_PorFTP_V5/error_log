@@ -1,0 +1,243 @@
+[19-Feb-2022 20:25:45 America/Fortaleza] PHP Warning:  Invalid argument supplied for foreach() in /home4/torred85/mdg.nivelzero.com.br/adicao.php on line 126
+[19-Feb-2022 20:53:59 America/Fortaleza] PHP Warning:  Invalid argument supplied for foreach() in /home4/torred85/mdg.nivelzero.com.br/adicao.php on line 126
+[20-Feb-2022 20:15:50 America/Fortaleza] PHP Warning:  include_once(classes/listaEmpresas.php): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:50 America/Fortaleza] PHP Warning:  include_once(): Failed opening 'classes/listaEmpresas.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:50 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'ListaEmpresas' not found in /home4/torred85/mdg.nivelzero.com.br/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/index.php on line 14
+[20-Feb-2022 20:15:54 America/Fortaleza] PHP Warning:  include_once(classes/listaEmpresas.php): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:54 America/Fortaleza] PHP Warning:  include_once(): Failed opening 'classes/listaEmpresas.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:54 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'ListaEmpresas' not found in /home4/torred85/mdg.nivelzero.com.br/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/index.php on line 14
+[20-Feb-2022 20:15:55 America/Fortaleza] PHP Warning:  include_once(classes/listaEmpresas.php): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:55 America/Fortaleza] PHP Warning:  include_once(): Failed opening 'classes/listaEmpresas.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:15:55 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'ListaEmpresas' not found in /home4/torred85/mdg.nivelzero.com.br/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/index.php on line 14
+[20-Feb-2022 20:17:03 America/Fortaleza] PHP Warning:  include_once(classes/listaEmpresas.php): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:17:03 America/Fortaleza] PHP Warning:  include_once(): Failed opening 'classes/listaEmpresas.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home4/torred85/mdg.nivelzero.com.br/index.php on line 6
+[20-Feb-2022 20:17:03 America/Fortaleza] PHP Fatal error:  Uncaught Error: Class 'ListaEmpresas' not found in /home4/torred85/mdg.nivelzero.com.br/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/index.php on line 14
+[21-Feb-2022 08:51:55 America/Fortaleza] PHP Warning:  move_uploaded_file(uploads/68928a54980ff54831fa0c688577572f.jpg): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/validar_empresa.php on line 73
+[21-Feb-2022 08:51:55 America/Fortaleza] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpMvPgf5' to 'uploads/68928a54980ff54831fa0c688577572f.jpg' in /home4/torred85/mdg.nivelzero.com.br/validar_empresa.php on line 73
+[21-Feb-2022 08:52:35 America/Fortaleza] PHP Warning:  move_uploaded_file(uploads/0af9901739355eb20e4eeada55bbc76b.jpg): failed to open stream: No such file or directory in /home4/torred85/mdg.nivelzero.com.br/validar_empresa.php on line 73
+[21-Feb-2022 08:52:35 America/Fortaleza] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpVRy3bM' to 'uploads/0af9901739355eb20e4eeada55bbc76b.jpg' in /home4/torred85/mdg.nivelzero.com.br/validar_empresa.php on line 73
+[23-Feb-2022 10:00:53 America/Fortaleza] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 111
+[23-Feb-2022 10:01:22 America/Fortaleza] PHP Parse error:  syntax error, unexpected '}', expecting ';' in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 111
+[23-Feb-2022 13:43:56 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(62): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 13:44:46 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(62): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 13:45:47 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(62): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 13:48:43 America/Fortaleza] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home4/torred85/mdg.nivelzero.com.br/classes/funcoes.php:21
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/classes/usuario.php(17): Funcoes::geraConexao()
+#1 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(15): Usuario->__construct()
+#2 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/funcoes.php on line 21
+[23-Feb-2022 13:53:56 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(65): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 13:54:13 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(65): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:00:08 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(60): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:00:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(60): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:00:47 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getNome() on null in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php:53
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php on line 53
+[23-Feb-2022 14:16:16 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getNome() on null in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php:53
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php on line 53
+[23-Feb-2022 14:16:34 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getNome() on null in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php:52
+Stack trace:
+#0 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php on line 52
+[23-Feb-2022 14:17:23 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(60): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:19:31 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(60): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:20:47 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:80
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(60): Avaliacao->insert()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 80
+[23-Feb-2022 14:31:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function getId() on null in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:97
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/validar_avaliacao.php(54): Avaliacao->update()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 97
+[24-Feb-2022 08:35:20 America/Fortaleza] PHP Parse error:  syntax error, unexpected ')' in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 39
+[24-Feb-2022 08:36:05 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:45
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 45
+[24-Feb-2022 08:36:21 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:44
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 44
+[24-Feb-2022 08:36:45 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:44
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 44
+[24-Feb-2022 08:37:20 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:44
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 44
+[24-Feb-2022 08:37:50 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:43
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 43
+[24-Feb-2022 08:38:13 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:43
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 43
+[24-Feb-2022 08:40:17 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Avaliacao::setId() in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php:45
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php(22): ListaAvaliacoes->setLista()
+#1 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->getLista()
+#2 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php on line 45
+[24-Feb-2022 08:42:06 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:60
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php(46): Avaliacao->selectById()
+#1 /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php(22): ListaAvaliacoes->setLista()
+#2 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->getLista()
+#3 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 60
+[24-Feb-2022 08:42:09 America/Fortaleza] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php:60
+Stack trace:
+#0 /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php(46): Avaliacao->selectById()
+#1 /home4/torred85/mdg.nivelzero.com.br/classes/listaAvaliacoes.php(22): ListaAvaliacoes->setLista()
+#2 /home4/torred85/mdg.nivelzero.com.br/avaliacoes.php(22): ListaAvaliacoes->getLista()
+#3 {main}
+  thrown in /home4/torred85/mdg.nivelzero.com.br/classes/avaliacao.php on line 60
+[11-Mar-2022 20:31:40 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:31:40 America/Fortaleza] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/usuario.php on line 85
+[11-Mar-2022 20:31:40 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home2/melho972/public_html/classes/usuario.php:86
+Stack trace:
+#0 /home2/melho972/public_html/index.php(13): Usuario->select()
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 86
+[11-Mar-2022 20:32:04 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:32:04 America/Fortaleza] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/usuario.php on line 85
+[11-Mar-2022 20:32:04 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home2/melho972/public_html/classes/usuario.php:86
+Stack trace:
+#0 /home2/melho972/public_html/index.php(13): Usuario->select()
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 86
+[11-Mar-2022 20:34:52 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:34:52 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:34:52 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:35:31 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:35:31 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:35:31 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:37:19 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:37:19 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:37:19 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:37:28 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:37:28 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:37:28 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:37:47 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:37:47 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:37:47 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:41:16 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:41:16 America/Fortaleza] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/usuario.php on line 120
+[11-Mar-2022 20:41:16 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home2/melho972/public_html/classes/usuario.php:121
+Stack trace:
+#0 /home2/melho972/public_html/valida_cadastro.php(97): Usuario->insert('ec037a8e2046799...', 'ec037a8e2046799...')
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 121
+[11-Mar-2022 20:43:56 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:43:56 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:43:56 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:44:28 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:44:28 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:44:28 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:44:30 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:44:30 America/Fortaleza] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/usuario.php on line 120
+[11-Mar-2022 20:44:30 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home2/melho972/public_html/classes/usuario.php:121
+Stack trace:
+#0 /home2/melho972/public_html/valida_cadastro.php(97): Usuario->insert('ec037a8e2046799...', 'ec037a8e2046799...')
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 121
+[11-Mar-2022 20:44:40 America/Fortaleza] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'melho972_admin'@'108.167.132.244' (using password: YES) in /home2/melho972/public_html/classes/funcoes.php on line 30
+[11-Mar-2022 20:44:40 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/listaEmpresas.php on line 61
+[11-Mar-2022 20:44:40 America/Fortaleza] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home2/melho972/public_html/classes/carrossel.php on line 36
+[11-Mar-2022 20:50:48 America/Fortaleza] PHP Warning:  Invalid argument supplied for foreach() in /home2/melho972/public_html/adicao.php on line 123
+[16-Mar-2022 17:14:20 America/Fortaleza] PHP Fatal error:  Uncaught Exception: ID inválido in /home2/melho972/public_html/classes/usuario.php:106
+Stack trace:
+#0 /home2/melho972/public_html/carrossel.php(15): Usuario->select()
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 106
+[18-Mar-2022 13:08:17 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method ListaEmpresas::setListaBySegmento() in /home2/melho972/public_html/index.php:23
+Stack trace:
+#0 {main}
+  thrown in /home2/melho972/public_html/index.php on line 23
+[18-Mar-2022 13:13:12 America/Fortaleza] PHP Parse error:  syntax error, unexpected end of file in /home2/melho972/public_html/index.php on line 491
+[18-Mar-2022 13:13:44 America/Fortaleza] PHP Parse error:  syntax error, unexpected end of file in /home2/melho972/public_html/index.php on line 491
+[01-Apr-2022 11:34:39 America/Fortaleza] PHP Fatal error:  Uncaught Exception: ID inválido in /home2/melho972/public_html/classes/usuario.php:106
+Stack trace:
+#0 /home2/melho972/public_html/painel.php(12): Usuario->select()
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 106
+[01-Apr-2022 11:56:05 America/Fortaleza] PHP Parse error:  syntax error, unexpected '">' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 169
+[01-Apr-2022 11:56:40 America/Fortaleza] PHP Parse error:  syntax error, unexpected '">' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 169
+[01-Apr-2022 11:56:45 America/Fortaleza] PHP Parse error:  syntax error, unexpected '">' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 169
+[01-Apr-2022 12:00:56 America/Fortaleza] PHP Parse error:  syntax error, unexpected 'Chania' (T_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 166
+[01-Apr-2022 12:02:21 America/Fortaleza] PHP Parse error:  syntax error, unexpected '=', expecting ';' or ',' in /home2/melho972/public_html/index.php on line 166
+[01-Apr-2022 12:04:59 America/Fortaleza] PHP Parse error:  syntax error, unexpected 'Chania' (T_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 166
+[01-Apr-2022 12:06:45 America/Fortaleza] PHP Parse error:  syntax error, unexpected 'Chania' (T_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 166
+[01-Apr-2022 13:18:27 America/Fortaleza] PHP Parse error:  syntax error, unexpected '"height: 30px;"' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 165
+[01-Apr-2022 13:27:38 America/Fortaleza] PHP Parse error:  syntax error, unexpected 'height' (T_STRING), expecting ';' or ',' in /home2/melho972/public_html/index.php on line 165
+[01-Apr-2022 15:06:28 America/Fortaleza] PHP Fatal error:  Uncaught Exception: ID inválido in /home2/melho972/public_html/classes/usuario.php:106
+Stack trace:
+#0 /home2/melho972/public_html/painel.php(12): Usuario->select()
+#1 {main}
+  thrown in /home2/melho972/public_html/classes/usuario.php on line 106
+[01-Apr-2022 16:30:48 America/Fortaleza] PHP Fatal error:  Uncaught Error: Call to undefined method Empresa::updateLogo() in /home2/melho972/public_html/alterar_imagem_empresa.php:48
+Stack trace:
+#0 {main}
+  thrown in /home2/melho972/public_html/alterar_imagem_empresa.php on line 48

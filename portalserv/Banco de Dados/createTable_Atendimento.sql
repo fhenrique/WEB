@@ -1,0 +1,22 @@
+CREATE TABLE Atendimento(
+	[Codigo] [bigint] IDENTITY NOT NULL,
+	[Cod_Cliente] [int] NULL,
+	[Cod_Tecnico] [int] NULL,
+	Cod_End [int] NULL,
+	Cod_Equip [int] NULL,
+	Dt_Atend [datetime] NULL,
+	Tipo_Serv [varchar](100) NULL,
+	Dt_Atend_Serv [datetime] NULL,
+	Hr_Atend_Serv [varchar](50) NULL,
+	Dt_Retorno [datetime] NULL,
+	Ficha [varchar](50) NULL,
+	Dt_Status [datetime] NULL,
+	Valor_serv [numeric](15,2) NULL,
+	Status [varchar](15) NULL,
+	Obs [varchar](800) NULL,
+	G_C [varchar](80) NULL,
+	Tipo_Cobranca [varchar](100) NULL,
+	ObsAtendimento [varchar](200) NULL,
+	Tipo_Serv2 [varchar](300) NULL,
+	CONSTRAINT pkAtendimento PRIMARY KEY (Codigo)
+) ON [PRIMARY]

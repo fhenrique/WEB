@@ -1,0 +1,28 @@
+SOBRE DO TUDO EU
+
+Banco de dados
+host: hostgator
+tipo: mysql
+database: dados
+
+- Para entrar na hostgator
+email: fhenrique.veiga@gmail.com
+senha: Senha@3762
+
+
+- Usuário de FTP, com acesso na pasta /home
+cliente utilizado: Filezilla
+Host: ftp.melhoresdegaranhuns.com.br
+Username: fabveig@melhoresdegaranhuns.com.br
+Password: mdg37623739
+Port: 21
+
+
+usuario do my sql, database tudo eu: melho972_fabio (Senha@3762)
+
+----
+pix de kbça: 04403734413
+
+http://wa.me/xxxxxx
+
+https://api.whatsapp.com/send?phone=55xxxxxxxxxxxxx  

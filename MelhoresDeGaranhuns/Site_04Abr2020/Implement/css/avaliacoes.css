@@ -1,0 +1,31 @@
+.row-rate{
+    margin-bottom: 25px;
+}
+
+input[type=radio], .h-number{
+    display: none;
+}
+
+.rate-star:hover, .clicado{
+    color: yellow !important;
+}
+
+.rate-star{
+    color: white;
+    background-color: #08135c;
+    padding: 10px 10px;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.spinner {
+	animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+	to{
+		transform: rotate(360deg);
+	}
+}

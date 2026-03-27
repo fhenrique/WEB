@@ -1,0 +1,72 @@
+h1 {
+  background-color: #191970;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  border-style: double;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+
+}
+
+body {
+  background-color: #836FFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.navegacao {
+  background-color: #6959CD;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.itens {
+      background-color: #191970;
+      margin-top: 20px;
+      margin-left: 65px;
+      width: 100px;
+      height: 20px;
+      border-radius: 25px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      font-weight : bold ; 
+      font-size: 18px;
+      text-align: center;   
+      color: #836FFF;
+      border: 2px solid #191970;    
+      padding-top: 3px;
+      cursor: pointer;
+}
+
+
+
+.home{
+      background-color: #191970;
+      text-align: center;
+      margin-top: 20px;
+      width: 140px;
+      height: 20px;
+      border-radius: 25px;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      font-weight : bold ; 
+      font-size: 18px;   
+      color: #836FFF;
+      border: 2px solid #191970;    
+      padding-top: 3px;
+      cursor: pointer;
+}
+
+.tabela{
+    text-align: center;
+    border: 1px solid;
+    width: 100%;
+}
+
+.sobre{
+     font-size: 14px;   
+     color: #D3D3D3;
+}

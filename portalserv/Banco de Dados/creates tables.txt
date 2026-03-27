@@ -1,0 +1,4 @@
+CREATE TABLE usuarios( codigo int(4) AUTO_INCREMENT, usuario varchar(15) NULL, senha varchar(255), perfil varchar(10), empresa varchar(15), PRIMARY KEY (codigo) );
+
+CREATE TABLE clientes( codigo int(4) AUTO_INCREMENT, nome varchar(15) NULL, fone_celular varchar(25), fone_res varchar(25), fone_com varchar(25), cpf varchar(25), cnpj varchar(25), atendente varchar(20), email varchar(50), solicitante varchar(80), contrato varchar(20), dt_contrato datetime, arquivo_morto varchar(1), arquivo_morto_justificativa varchar(255), tipo varchar(20), data_cadastro datetime, empresa varchar(15), obs nvarchar(2000), PRIMARY KEY (codigo));
+

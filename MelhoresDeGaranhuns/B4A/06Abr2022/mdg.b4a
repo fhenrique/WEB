@@ -1,0 +1,175 @@
+﻿Build1=Default,b4a.mdg
+File1=buttonHome.png
+File2=buttonsair.png
+File3=Layout.bal
+File4=setarefresh1.png
+File5=setarefresh2.png
+File6=setarefresh3.png
+File7=setarefresh4.png
+FileGroup1=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+Group=Default Group
+Library1=core
+Library2=phone
+Library3=xui
+Library4=network
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="29"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~~\n~SetApplicationAttribute(android:allowBackup, "false")~\n~~\n~SetApplicationAttribute(android:icon, "@mipmap/ic_launcher")~\n~CreateResource(mipmap-anydpi-v26, ic_launcher.xml,~\n~<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">~\n~<background android:drawable="@mipmap/background3"/>~\n~<foreground android:drawable="@mipmap/foreground3"/>~\n~</adaptive-icon>~\n~)		~\n~~\n~'End of default text.~\n~
+Module1=Starter
+NumberOfFiles=7
+NumberOfLibraries=4
+NumberOfModules=1
+Version=10.9
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Melhores de Garanhuns
+	#VersionCode: 3
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+	#AdditionalRes: ../icon
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: True
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private xui As XUI
+	Private timer1 As Timer
+	Private timer2 As Timer
+	Private timer3 As Timer
+	Private timerRefresh As Timer
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	Private WebView1 As WebView
+	Private imgRefresh As ImageView
+	Private lblAtualizar As Label
+	Private imgHome As ImageView
+	Private btnsair As ImageView
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+
+	If IsConnected = False Then
+		Msgbox("Verifique sua conexão com a internet!","Melhores de Garanhuns")
+		ExitApplication
+	End If
+	
+	Activity.LoadLayout("Layout")
+	
+	WebView1.LoadUrl("http://melhoresdegaranhuns.com.br")
+	
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh1.png")
+	imgHome.Bitmap = LoadBitmap(File.DirAssets,"buttonhome.png")
+	btnsair.Bitmap = LoadBitmap(File.DirAssets,"buttonsair.png")
+	
+	timer1.Initialize("timer1", 50)
+	timer2.Initialize("timer2", 50)
+	timer3.Initialize("timer3", 50)
+	timerRefresh.Initialize("timerRefresh", 100)
+	
+	timer1.Enabled = False
+	timer2.Enabled = False
+	timer3.Enabled = False
+	timerRefresh.Enabled = False
+	
+End Sub
+
+Sub Activity_Resume
+	
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Private Sub imgRefresh_Click
+
+	If IsConnected = False Then
+		Msgbox("Verifique sua conexão com a internet!","Melhores de Garanhuns")
+		ExitApplication
+	End If
+	
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh2.png")
+	timer1.Enabled = True
+End Sub
+
+Sub timer1_Tick
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh3.png")
+	timer1.Enabled = False
+	timer2.Enabled = True
+End Sub
+
+Sub timer2_Tick
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh4.png")
+	timer2.Enabled = False
+	timer3.Enabled = True
+End Sub
+
+Sub timer3_Tick
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh1.png")
+	timer3.Enabled = False
+	timerRefresh.Enabled = True
+End Sub
+
+Sub timerRefresh_Tick
+	timerRefresh.Enabled = False
+	WebView1.LoadUrl("http://melhoresdegaranhuns.com.br")
+End Sub
+
+
+
+Private Sub lblAtualizar_Click
+
+	If IsConnected = False Then
+		Msgbox("Verifique sua conexão com a internet!","Melhores de Garanhuns")
+		ExitApplication
+	End If
+	
+	imgRefresh.Bitmap = LoadBitmap(File.DirAssets,"setaRefresh2.png")
+	timer1.Enabled = True
+End Sub
+
+Private Sub imgHome_Click
+	If IsConnected = False Then
+		Msgbox("Verifique sua conexão com a internet!","Melhores de Garanhuns")
+		ExitApplication
+	End If
+	
+	WebView1.LoadUrl("http://melhoresdegaranhuns.com.br")
+End Sub
+
+Private Sub btnsair_Click
+	Dim i As Int
+	i = Msgbox2("Sair do aplicativo?","Melhores de Garanhuns","Sim","","Não",Null)
+	
+	Select i	
+		Case DialogResponse.POSITIVE
+			ExitApplication
+	End Select
+
+End Sub
+
+Sub IsConnected As Boolean
+	Dim P As Phone,server As ServerSocket'Add a reference to the network library  'Check status: DISCONNECTED 0
+	Try
+		server.Initialize(0, "")
+		Log("mobile data state: " & P.GetDataState & " wifi_on: " & P.GetSettings("wifi_on") & " server ip: " & server.GetMyIP & CRLF &  "wifi ip: " & server.GetMyWifiIP)
+		If server.GetMyIP = "127.0.0.1" Then Return False  'this is the local host address
+		If Not(P.GetDataState.EqualsIgnoreCase("CONNECTED")) And server.GetMyWifiIP = "127.0.0.1" Then Return False
+		Return True
+	Catch
+		Return False
+	End Try
+End Sub

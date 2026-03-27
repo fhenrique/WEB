@@ -1,0 +1,7 @@
+Select
+Codigo,
+Cod_Cliente,
+Equipamento,
+Cod_Endereco,
+ExibeNaFicha
+From Equipamento

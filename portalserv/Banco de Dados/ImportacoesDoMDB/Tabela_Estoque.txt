@@ -1,0 +1,15 @@
+Select
+Codigo,
+Produto,
+Dt_Ent,
+Valor_Ent,
+Qtd_Ent,
+Dt_Saida,
+Valor_Saida,
+Qtd_Saida,
+Liberado,
+Porcent_Lucro,
+Saldo,
+Nome_Tecnico,
+codMaterial
+From Estoque

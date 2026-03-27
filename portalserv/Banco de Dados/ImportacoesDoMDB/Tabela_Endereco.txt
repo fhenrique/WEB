@@ -1,0 +1,11 @@
+Select
+Codigo,
+Cod_Cliente,
+Endereco,
+Bairro,
+Cidade,
+UF,
+CEP,
+Ref,
+Zona
+From Endereco

@@ -1,0 +1,17 @@
+Select
+Codigo,
+Data_Emissao,
+Nome_Cli,
+Fone_Celular,
+Fone_Res,
+Fone_Com,
+CPF,
+CNPJ,
+Atendente,
+E_Mail,
+Solicitante,
+Contrato,
+Dt_Contrato,
+Aquivo_Morto,
+Aquivo_Morto_Justificativa
+From Clientes

@@ -1,0 +1,14 @@
+Select
+Codigo,
+NomeCli,
+End,
+Bairro,
+Cidade, 
+Cep,
+CNPJ,
+Fone,
+Fax,
+Contato,
+Tipo_Mat,
+Email
+From Fornecedor

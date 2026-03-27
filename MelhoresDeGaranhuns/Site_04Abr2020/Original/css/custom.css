@@ -1,0 +1,67 @@
+#back-to-top {
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+#back-to-top i{
+    width: 50%;
+    margin-left: 25%;
+    height: 50%;
+    margin-top: 15%;
+}
+
+#avaliacoes{
+    color: black;
+}
+
+#avaliacoes .modal-dialog{
+    max-width: 350px;
+    margin: 10rem auto;
+}
+
+#avaliacoes .modal-header, #avaliacoes .modal-footer{
+    border: none;
+}
+
+#avaliacoes .modal-body{
+    padding: 50px auto;
+
+}
+
+#avaliacoes .modal-body input[type=radio],#avaliacoes .modal-body input[name=empresaRate]{
+    display: none;
+}
+
+#avaliacoes .modal-body a, #avaliacoes .modal-footer a{
+    color: white;
+    background-color: #08135c;
+    padding: 10px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#avaliacoes .modal-body a:hover, #avaliacoes .modal-footer a:hover, #avaliacoes .clicado{
+    color: yellow !important;
+}
+
+#avaliacoes .clicado{
+    color: yellow !important;
+    background-color: #08135c !important;
+}
+
+.spinner {
+	animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner{
+	to{
+		transform: rotate(360deg);
+	}
+}

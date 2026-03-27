@@ -1,0 +1,19 @@
+Select
+Cod_Cliente,
+Cod_Tecnico,
+Cod_End,
+Cod_Equip,
+Dt_Atend,
+Tipo_Serv,
+Dt_Atend_Serv,
+Hr_Atend_Serv,
+Ficha,
+Dt_Status,
+Valor_Serv,
+Status,
+Obs,
+G_C,
+Tipo_Cobranca,
+ObsAtendimento,
+Tipo_Serv2
+From Atendimento

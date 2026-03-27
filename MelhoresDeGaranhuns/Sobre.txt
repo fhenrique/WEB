@@ -1,0 +1,38 @@
+- Para entrar no site Melhoresdegaranhuns.com.br como admin
+usuario: fabio.veiga@live.com
+senha: 37623739
+
+- Para entrar na hostgator (Mas o site migrou para a 000webhost)
+email: fhenrique.veiga@gmail.com
+senha: Senha@3762
+
+
+- Usuário de FTP, com acesso na pasta /home
+cliente utilizado: Filezilla
+Host: ftp.melhoresdegaranhuns.com.br
+Username: fabveig@melhoresdegaranhuns.com.br
+Password: mdg37623739
+Port: 21
+
+
+- Imagens:
+  Que fica no topo: ../images/slide/slider-bg.jpg
+  do carrosel: ../uploads/carrosel/
+  logotipos das empresas: ../uploads/
+
+
+- Banco de dados da hostgator:
+Se quiser colocar a senha igual a 12345678, fazer update para a string abaixo:
+25d55ad283aa400af464c76d713c07ad
+
+
+- Dados para entrar na 000Webhhost:
+https://br.000webhost.com/
+email: fabio.veiga@live.com
+password: 37623739
+
+FTP:
+Host: files.000webhost.com
+Port: 21
+Usuário: melhoresdegaranhuns
+Senha: 37623739
